@@ -1,0 +1,50 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+#scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+#heart {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#center-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffaf5;
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 6vw, 76px);
+  font-weight: bold;
+  font-style: italic;
+  white-space: nowrap;
+  opacity: 0;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 20px #168bff,
+    0 0 45px #075dff;
+  animation: appear 2s ease forwards;
+  animation-delay: 4s;
+}
+
+@keyframes appear {
+  to { opacity: 1; }
+}
